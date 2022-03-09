@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+     max-width: 1170px;
+     margin: 0 auto;
+     padding: 0 15px;
+}
+
+
+body {
+font-family: 'PT Serif', serif;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+color: #fff;
+}
+
+header {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header_top {
+    background-color: #d5d6d5;
+}
+
+.header_btn {
+    float: right;
+    line-height: 36px;
+    color:#fff;
+    background-color: #8e9e72;
+    padding: 5px 20px 4px 50px;
+    font-size: 16px;
+    position: relative;
+}
+
+.header_btn::before {
+     content: "\f1fc";
+     font-family: 'icomoon';
+     position: absolute;
+     left: 22px;
+     color: #fff;
+    position: absolute;
+}
+
+.header_contacts::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.header_phone,
+.header_email {
+    color: #323232;
+    letter-spacing: 0.25px;
+    line-height: 45px;
+    position: relative;
+}
+
+.header_phone {
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.header_phone::before {
+     content: "\f095";
+     font-family: 'icomoon';
+     position: absolute;
+     left: 0;
+     color: #8e9e72;
+
+}
+.header_email {
+    padding-left: 24px;
+}
+
+.header_email::before {
+     content: "\f003";
+     font-family: 'icomoon';
+     position: absolute;
+     left: 0;
+     color: #8e9e72;
+}
+.header_content {
+    padding: 34px 0px 24px;
+}
+
+.header_content-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    color: #323232;
+    font-size: 16px;
+    line-height: 36px;
+    border: 1px solid transparent;
+    padding: 0px 16px;
+    transition: all .3s ;
+}
+
+.menu a:hover {
+    border-color: #8e9e72;
+}
+.menu li + li {
+    padding-left: 10px;
+}
