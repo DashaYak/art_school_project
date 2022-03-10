@@ -12,7 +12,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -22,7 +24,14 @@
           <div class="header_contacts">
             <a class="header_phone" href="tel:86459382019">8 (645) 938 20 19</a>
             <a class="header_email" href="#">hudozhnik123@gmail.com</a>
-            <a class="header_btn" href="#">Запись на пробный урок</a>
+            <a
+              data-fancybox
+              data-src="#hidden-content"
+              href="javascript:;"
+              class="header_btn"
+              href="#"
+              >Запись на пробный урок</a
+            >
           </div>
         </div>
       </div>
@@ -46,5 +55,61 @@
         </div>
       </div>
     </header>
+
+    <section class="slider">
+      <div class="contanier">
+        <div class="slider_inner">
+          <div class="slder_item">
+              <div class="slider_item-content">
+            <div class="slider_title">Художественная онлайн-школа</div>
+            <div class="slider_text">
+              Онлайн-курсы и мастер-классы по живописи и графике, созданные на
+              базе академических программ
+            </div>
+            <a data-fancybox
+              data-src="#hidden-content"
+              href="javascript:;" class="slider_button default-btn">Запись на курс</a>
+          </div>
+          </div>
+
+          <div class="slder_item">
+              <div class="slider_item-content">
+            <div class="slider_title">Художественная онлайн-школа</div>
+            <div class="slider_text">
+              Онлайн-курсы и мастер-классы по живописи и графике, созданные на
+              базе академических программ
+            </div>
+            <a data-fancybox
+              data-src="#hidden-content"
+              href="javascript:;" class="slider_button default-btn">Запись на курс</a>
+          </div>
+          </div>
+
+          <div class="slder_item">
+              <div class="slider_item-content">
+            <div class="slider_title">Художественная онлайн-школа</div>
+            <div class="slider_text">
+              Онлайн-курсы и мастер-классы по живописи и графике, созданные на
+              базе академических программ
+            </div>
+            <a data-fancybox
+              data-src="#hidden-content"
+              href="javascript:;" class="slider_button default-btn">Запись на курс</a>
+          </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div id="hidden-content">
+      <h2>Hello</h2>
+      <p>You are awesome.</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
