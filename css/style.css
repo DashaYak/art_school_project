@@ -173,6 +173,7 @@ header {
     border-right-width: 20px;
     position: relative;
     outline: none;
+    background-color: transparent;
 }
 
 .default-btn::after {
@@ -193,10 +194,11 @@ header {
     z-index: 3;
     width: 40px;
     height: 40px;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     cursor: pointer;
     outline: none;
-    background-color: #50a0b8;
+    background-color: #fff;
+    opacity: 0,5;
 }
 
 .slick-btn.slick-disabled {
@@ -209,7 +211,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'icomoon';
-    color: #fff;
+    color: #000;
 }
 
 .slick-next::before {
@@ -225,4 +227,85 @@ header {
 
 .slick-prev {
     left: 0;
+}
+
+.about {
+    padding: 50px 0px 30px;
+    color: #000;
+}
+
+.about_top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.about_title-box {
+    max-width: 520px;
+    padding-left: 140px;
+    position: relative;
+}
+
+.about_title-box::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #50a0b8;
+    left: 0;
+    top: 11px;
+}
+
+.about_title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #323232;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+.about_text {
+letter-spacing: 0.1px;
+}
+
+.about_btn a {
+    color: #323232;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    padding: 5px 38px;
+    border: 3px solid #d5d6d5;
+
+}
+.about_items {
+    display: flex;
+    justify-content: space-between;
+}
+.about_item {
+    min-width: 360px;
+    text-align: center;
+    padding: 30px 0px 80px;
+    position: relative;
+    min-height: 375px;
+    margin: 5px;
+    background-color: #ccc;
+}
+
+.about_item-title {
+    color: #323232;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    padding: 24px 0;
+}
+
+.about_item-text {
+    letter-spacing: 0.1px;
+    padding: 0px 30px 30px;
+}
+
+.about_item-btn {
+    position: absolute;
+    bottom: 40px;
 }
