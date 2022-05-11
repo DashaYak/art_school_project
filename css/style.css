@@ -229,24 +229,24 @@ header {
     left: 0;
 }
 
-.about {
+.services {
     padding: 50px 0px 30px;
     color: #000;
 }
 
-.about_top {
+.services_top {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
 }
 
-.about_title-box {
+.services_title-box {
     max-width: 520px;
     padding-left: 140px;
     position: relative;
 }
 
-.about_title-box::before {
+.services_title-box::before {
     content: "";
     position: absolute;
     width: 100px;
@@ -256,7 +256,7 @@ header {
     top: 11px;
 }
 
-.about_title {
+.services_title {
     font-size: 24px;
     font-weight: 500;
     line-height: 24px;
@@ -265,23 +265,22 @@ header {
     margin-bottom: 10px;
 }
 
-.about_text {
+.services_text {
 letter-spacing: 0.1px;
 }
 
-.about_btn a {
+.services_btn a {
     color: #323232;
     line-height: 24px;
     letter-spacing: 0.25px;
     padding: 5px 38px;
     border: 3px solid #d5d6d5;
-
 }
-.about_items {
+.services_items {
     display: flex;
     justify-content: space-between;
 }
-.about_item {
+.services_item {
     min-width: 360px;
     text-align: center;
     padding: 30px 0px 80px;
@@ -292,7 +291,7 @@ letter-spacing: 0.1px;
     box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
 }
 
-.about_item-title {
+.services_item-title {
     color: #323232;
     font-size: 18px;
     line-height: 24px;
@@ -301,29 +300,65 @@ letter-spacing: 0.1px;
     padding: 24px 0;
 }
 
-.about_item-text {
+.services_item-text {
     letter-spacing: 0.1px;
     padding: 0px 30px 30px;
 }
 
-.about_item-btn {
+.services_item-btn {
     position: absolute;
     bottom: 40px;
     left: 0;
     right: 0;
 }
 
-.about_item-btn .default-btn {
+.services_item-btn .default-btn {
     color: #323232;
 }
 
-.about_item-btn .default-btn::after {
+.services_item-btn .default-btn::after {
     color: #fff;
 }
 
-.about_item-link {
+.services_item-link {
     color: #323232;
     font-family: 'Roboto', sans-serif;
     border-bottom: 1px solid #323232;
     margin-right: 60px;
+}
+
+.about {
+background-image: url(../img/about-fon.jpeg);
+background-size: cover;
+background-position: center;
+min-height: 300px;
+background-repeat: no-repeat;
+padding: 25px 0px 45px;
+}
+
+.about_inner {
+    max-width: 545px;
+    padding-left: 70px;
+}
+
+.about_title {
+    padding: 10px 0px 25px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about_text {
+    margin-bottom: 30px;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+    color: #fff;
+    font-family: 'Roboto',
+    sans-serif;
+}
+
+.about_btn.default-btn::after {
+    color: #000;
 }
